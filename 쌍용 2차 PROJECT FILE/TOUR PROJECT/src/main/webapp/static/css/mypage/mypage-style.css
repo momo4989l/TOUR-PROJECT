@@ -1,0 +1,215 @@
+.logo {
+	font-family: 'Poor Story', cursive;
+	font-size: 3em;
+	padding-top: 0.1em;
+}
+
+.section div {
+	width: 175px;
+	height: 100px;
+	display: inline-block;
+	font-family: 'Poor Story', cursive;
+	font-size: 1.0em;
+	text-align: bottom;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:active {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.animated {
+	-webkit-animation-duration: 0s;
+	animation-duration: 0s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+
+.gototop {
+	position: fixed;
+	bottom: 200px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: visible;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gototop.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gototop a {
+	padding: 10px;
+	width: 150px;
+	height: 40px;
+	display: table;
+	background: #3c3c3c;
+	color: white;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.gototop a:hover, .gototop a:active, .gototop a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.gototour {
+	position: fixed;
+	bottom: 130px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: visible;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gototour.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gototour a {
+	padding: 10px;
+	width: 150px;
+	height: 40px;
+	display: table;
+	background: #3c3c3c;
+	color: white;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.gototour a:hover, .gototour a:active, .gototour a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.gotofood {
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: visible;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gotofood.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gotofood a {
+	padding: 10px;
+	width: 150px;
+	display: table;
+	background: #3c3c3c;
+	color: white;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.gotofood a:hover, .gotofood a:active, .gotofood a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.gotohotel {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: visible;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.gotohotel.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.gotohotel a {
+	padding: 10px;
+	width: 150px;
+	height: 40px;
+	display: table;
+	background: #3c3c3c;
+	color: white;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.gotohotel a:hover, .gotohotel a:active, .gotohotel a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+#footer {
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-family: "Quicksand", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#footer>div>div>div>h4 {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+#footer>div>div>div>p {
+	font-size: 18px;
+}
+
+#footer>div>div>div>p>a {
+	color: #EF4035;
+}

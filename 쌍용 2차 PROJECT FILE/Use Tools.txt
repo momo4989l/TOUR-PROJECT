@@ -1,0 +1,19 @@
+VIEW : Visual Studio Code, SublimeText
+
+FRONT, BACK : Eclipse STS
+
+DB : SQLGATE (AWS ORACLE), MyBatis
+
+BUILDUP : Maven
+
+WAS : TOMCAT 8.5
+
+FileZilla Client(SFTP)
+
+OS : Windows8(Client) Ubuntu 18.04(AWS)
+
+Programming Language : JQuery, JavaScript, BootStrap, HTML5, CSS, Java
+
+Test Tool : Postman
+
+SSH,Telnet Client : PuTTY

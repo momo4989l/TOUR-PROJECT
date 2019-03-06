@@ -1,0 +1,85 @@
+.logo {
+	font-family: 'East Sea Dokdo', serif;
+}
+
+.demo-header {
+	width: 100%;
+	height: 500px;
+	display: table;
+	background: url('../../img/bg-kakao.jpg') no-repeat center center scroll;
+	color: #fff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+}
+.demo-header > span {
+	text-align : right;
+}
+
+.demo-header>ul>li>img {
+	margin-top: -80px;
+}
+
+.preview-pane {
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 15px;
+}
+
+.preview-pane hr {
+	max-width: 150px;
+	margin: 5px auto;
+}
+
+.preview-pane a {
+	color: #222;
+}
+
+.preview-pane a:focus {
+	outline: none;
+}
+
+.preview-pane a img {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.preview-pane a:hover img {
+	opacity: 0.5;
+}
+
+#div-header {
+	
+}
+/* 	#div-header > span {
+			font-size : 5em;
+			padding-left: 10px;
+			color : orange;
+	} */
+.cell {
+	display: table-cell; /* table-cell */
+	vertical-align: middle; /* table-cell 에서 적용*/
+}
+
+#footer {
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-family: "Quicksand", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#footer>div>div>div>h4 {
+	margin-top: 20px;
+	margin-bottom : 20px;
+	color: white;
+}
+#footer>div>div>div>p {
+	font-size: 18px;
+	line-height : 1.7;
+	margin-bottom : 20px;
+}

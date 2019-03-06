@@ -1,0 +1,30 @@
+#footer {
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-family: "Quicksand", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+#footer>div>div>div>h4 {
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-top: 20px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+#footer>div>div>div>p {
+	font-size: 18px;
+	line-height: 1.7;
+	color: white;
+	margin-bottom : 20px;
+	letter-spacing: 0;
+	word-spacing: 0;
+}
+
+#footer>div>div>div>p>a {
+	color: #EF4035;
+}

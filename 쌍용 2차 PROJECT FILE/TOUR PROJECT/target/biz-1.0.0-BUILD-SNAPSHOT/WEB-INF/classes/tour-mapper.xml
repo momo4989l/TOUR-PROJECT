@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Tour">
+	<resultMap type="memberVo" id="memberResultMap">
+		<result column="userid" property="userid" jdbcType="VARCHAR" javaType="String"/>		
+		<result column="gender" property="gender" jdbcType="VARCHAR" javaType="String"/>
+		<result column="email" property="email" jdbcType="VARCHAR" javaType="String"/>
+		<result column="password" property="password" jdbcType="VARCHAR" javaType="String"/>
+		<result column="city" property="city" jdbcType="VARCHAR" javaType="String"/>
+	</resultMap>
+	
+	<resultMap type="tourVo" id="tourResultMap">
+		<result column="idx" property="idx" jdbcType="INTEGER" javaType="Integer"/>
+		<result column="tour_name" property="tour_name" jdbcType="VARCHAR" javaType="String"/>
+		<result column="tour_address" property="tour_address" jdbcType="VARCHAR" javaType="String"/>
+		<result column="tour_phone" property="tour_phone" jdbcType="VARCHAR" javaType="String"/>
+		<result column="div_name" property="div_name" jdbcType="VARCHAR" javaType="String"/>
+	</resultMap>
+	
+	<parameterMap type="memberVo" id="insertMemberMap">
+		<parameter property="userid" mode="IN" javaType="String" jdbcType="VARCHAR"/>
+		<parameter property="gender" mode="IN" javaType="String" jdbcType="VARCHAR"/>
+		<parameter property="email" mode="IN" javaType="String" jdbcType="VARCHAR"/>
+		<parameter property="password" mode="IN" javaType="String" jdbcType="VARCHAR"/>
+		<parameter property="city" mode="IN" javaType="String" jdbcType="VARCHAR"/>
+	</parameterMap>
+	
+	<insert id="insertMemberSP" parameterMap="insertMemberMap" parameterType="memberVo">
+		{  call sp_member_insert(?,?,?,?,?)}
+	</insert>
+	
+	<parameterMap type="hashMap" id="selectMemberMap">
+	<parameter property="userid" javaType="String" jdbcType="VARCHAR" mode="IN"/>
+	<parameter property="result" javaType="java.sql.ResultSet"  jdbcType="CURSOR" mode="OUT" resultMap="memberMap"/>
+	</parameterMap>
+	<select id="selectOneMemberSP" statementType="CALLABLE" parameterMap="selectMemberMap">
+		{  call sp_member_select_one(?, ?)}
+	</select>
+	
+	<parameterMap type="tourVo" id="insertTourMap">
+		<parameter property="tour_name" javaType="String" jdbcType="VARCHAR" mode="IN"/>
+		<parameter property="tour_address" javaType="String" jdbcType="VARCHAR" mode="IN"/>
+		<parameter property="tour_price" javaType="String" jdbcType="VARCHAR" mode="IN"/>
+		<parameter property="div_name" javaType="String" jdbcType="VARCHAR" mode="IN"/>
+	</parameterMap>
+	<insert id="insertTourSP" parameterType="tourVo" parameterMap="insertTourMap">
+		{  call sp_tour_insert(?,?,?,?)}
+	</insert>
+	
+	<parameterMap type="tourVo" id="selectOneTourMap">
+		<parameter property="tour_idx" javaType="Integer" jdbcType="INTEGER" mode="IN"/>
+		<parameter property="result" javaType="ResultSet" jdbcType="CURSOR" 
+			mode="OUT"  resultMap="tourResultMap"/>
+	</parameterMap>
+	<select id="selectOneTourSP" parameterMap="selectOneTourMap" statementType="CALLABLE"
+		parameterType="hashMap">
+		{  call sp_tour_select_one(?,?)}
+	</select>
+	
+	<parameterMap type="hashMap" id="selectPlacesMap">
+		<parameter property="results" javaType="ResultSet" jdbcType="CURSOR" mode="OUT" resultMap="tourResultMap"/>
+	</parameterMap>
+	<select id="selectPlaces" parameterMap="selectPlacesMap" statementType="CALLABLE">
+		{ call sp_tour_select_places(?) }
+	</select>
+</mapper>

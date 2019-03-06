@@ -1,0 +1,9 @@
+AWS PuTTY 접속 HostName : root@ec2-52-79-242-47.ap-northeast-2.compute.amazonaws.com
+
+SFTP 접속 호스트 : 52.79.242.47 / root / javaubuntu
+
+52.79.242.47:8080/manager/html
+admin : admin
+password : password
+
+오라클 호스트 : webtest.cklaj5ipogbz.ap-northeast-2.rds.amazonaws.com / tset / javaoracle / 1521 / orcl
